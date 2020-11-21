@@ -8,7 +8,7 @@ package tugas.web.application.persistence;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import tugas.web.application.service.MyConnectionProvider;
+import tugas.web.application.service.MysqlConnectionService;
 
 /**
  *
@@ -21,7 +21,7 @@ public class AkunDAOImpl implements AkunDAO{
     public Akun getAkun(String username, String password) {
         Akun akun = new Akun();
         try{
-            con = MyConnectionProvider.getCon();
+            con = MysqlConnectionService.getCon();
             ps = con.prepareStatement("SELECT * FROM akun WHERE username=? AND password=?");
             ps.setString(1, username);
             ps.setString(2, password);

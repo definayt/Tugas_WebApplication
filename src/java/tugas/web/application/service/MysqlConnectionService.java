@@ -12,11 +12,14 @@ import java.sql.DriverManager;
  *
  * @author user
  */
-public class MyConnectionProvider implements MyConnection{
+public class MysqlConnectionService{
     static Connection con = null;
     
     public static Connection getCon(){
         try{
+            String username = "root";
+            String password = "";
+            String connectionURL = "jdbc:mysql://localhost:3306/web_app_tk";
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection(connectionURL, username, password);
             if (con != null) {

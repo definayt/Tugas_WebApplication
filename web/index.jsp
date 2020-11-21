@@ -9,28 +9,37 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <title>Login Page</title>
+        <style>
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
     </head>
    <body>
-        <center>
-             <h3>Login Page</h3>
-             <p style="text-align: center; color: red">${message}</p>
-             <form method="post" action="Login">
-                 <table>
-                     <tr>
-                         <td>Username</td> 
-                         <td><input type="text" name="username" required></td>
-                     </tr>
-                     <tr>
-                         <td>Password </td>
-                         <td><input type="password" name="password" required></td>
-                     </tr>
-                     <tr>
-                         <td></td>
-                         <td style="text-align: right"><button type="submit" name="submit" value="Login">Login</button></td>
-                     </tr>
-             </table>
-             </form>
-        </center>
+        <div class="container">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <div class="jumbotron" style="margin-top:150px">
+                    <center>
+                        <h3>Login</h3>
+                        <p style="color: red">${message}</p>
+                    </center>
+                    <form method="post" action="Login">
+                       <div class="form-group">
+                            <input class="form-control" type="text" name="username" placeholder="Username" required>
+                       </div>
+                       <div class="form-group">
+                            <input class="form-control" type="password" name="password" placeholder="Password" required>
+                       </div>
+                       <button class="btn btn-success form-control" type="submit" name="submit" value="Login">Login</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
     </body>
 </html>

@@ -20,8 +20,8 @@ import tugas.web.application.persistence.AkunDAOImpl;
  *
  * @author user
  */
-@WebServlet(name = "Login", urlPatterns = {"/Login"})
-public class Login extends HttpServlet {
+@WebServlet(name = "LoginServlet", urlPatterns = {"/LoginServlet"})
+public class LoginServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,7 +34,7 @@ public class Login extends HttpServlet {
      */
     
     
-    public Login() {
+    public LoginServlet() {
     }
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

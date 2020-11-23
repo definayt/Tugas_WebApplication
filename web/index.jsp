@@ -28,7 +28,7 @@
                         <h3>Login</h3>
                         <p style="color: red">${message}</p>
                     </center>
-                    <form method="post" action="Login">
+                    <form method="post" action="LoginServlet">
                        <div class="form-group">
                             <input class="form-control" type="text" name="username" placeholder="Username" required>
                        </div>

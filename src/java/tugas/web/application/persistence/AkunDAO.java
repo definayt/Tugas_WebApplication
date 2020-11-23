@@ -5,6 +5,8 @@
  */
 package tugas.web.application.persistence;
 
+import tugas.web.application.bussiness.Akun;
+
 /**
  *
  * @author user

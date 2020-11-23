@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tugas.web.application.persistence;
+package tugas.web.application.bussiness;
 
+import tugas.web.application.bussiness.Akun;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -12,6 +13,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import tugas.web.application.persistence.AkunDAO;
+import tugas.web.application.persistence.AkunDAOImpl;
 
 /**
  *

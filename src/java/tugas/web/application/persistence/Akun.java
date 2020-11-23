@@ -24,9 +24,7 @@ public class Akun {
 
     public Akun() {
     }
-
     
-
     public Integer getId() {
         return id;
     }

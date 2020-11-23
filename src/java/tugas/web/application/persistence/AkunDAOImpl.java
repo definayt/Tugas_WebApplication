@@ -22,7 +22,7 @@ public class AkunDAOImpl implements AkunDAO{
         Akun akun = new Akun();
         try{
             con = MysqlConnectionService.getCon();
-            ps = con.prepareStatement("SELECT * FROM akun WHERE username=? AND password=?");
+            ps = con.prepareStatement("SELECT * FROM akun WHERE username=? AND password=md5(?)");
             ps.setString(1, username);
             ps.setString(2, password);
             
